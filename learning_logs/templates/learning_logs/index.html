@@ -1,0 +1,17 @@
+{% extends "learning_logs/base.html" %}
+
+{% block page_header %}
+  <div class="jumbotron">
+    <h1 class="display-3">Şəxsi Wikipedia</h1>
+
+    <p class="lead">Öyrəndiyiniz mövzülar var? Əla!!! 
+        öyrətmək özü öyrənməyin ən zəmanətli yollarandan biridir.
+        Şəxsi Wikipedia-da qeydiyyatdan keçərək, haqqında oxuduğunuz mövzulardan
+        qeydlər götürün, postlar hazırlamağa başlayın, yaxşı başa düşmədiyiniz
+        məqamları üzə çıxardın və onları daha da araşdırın. Son nəticə olaraq
+        hazırladığınız informativ postları digərləri üçün ictimailəşdirin!</p>
+
+    <a class="btn btn-lg btn-primary" href="{% url 'users:register' %}"
+        role="button">Qeydiyyat &raquo;</a>
+  </div>
+{% endblock page_header %}
